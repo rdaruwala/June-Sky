@@ -36,5 +36,10 @@ class ViewController: UIViewController {
     @IBAction func visitFacebookButton(sender: AnyObject) {
         UIApplication.tryURL(["fb://juneskyofficial", "https://www.facebook.com/juneskyofficial"])
     }
+    
+    @IBAction func onContactButtonTap(sender: AnyObject) {
+        
+    }
+    
 }
 
