@@ -53,6 +53,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Sk-rcw">
                                 <rect key="frame" x="312" y="369" width="30" height="30"/>
                                 <state key="normal" title="FB"/>
+                                <connections>
+                                    <action selector="visitFacebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tY-Zo-8bE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
                                 <rect key="frame" x="417" y="369" width="56" height="30"/>

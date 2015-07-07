@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         UIApplication.sharedApplication().openURL(url!)
     }
     
-    
+    @IBAction func visitFacebookButton(sender: AnyObject) {
+        UIApplication.tryURL(["fb://juneskyofficial", "https://www.facebook.com/juneskyofficial"])
+    }
 }
 
