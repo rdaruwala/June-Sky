@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var projectsButton: UIButton!
+    @IBOutlet weak var mediaButton: UIButton!
+    @IBOutlet weak var blogButton: UIButton!
+    @IBOutlet weak var aboutUsButton: UIButton!
+    @IBOutlet weak var coheadsButton: UIButton!
+    @IBOutlet weak var contactUsButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var websiteButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +27,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func visitWebsiteButton(sender: AnyObject) {
+        let url = NSURL(string: "http://www.junesky.org")
+        UIApplication.sharedApplication().openURL(url!)
+    }
+    
+    
 }
 

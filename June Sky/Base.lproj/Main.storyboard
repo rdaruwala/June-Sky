@@ -43,20 +43,23 @@
                                 <state key="normal" title="Blog"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
-                                <rect key="frame" x="76" y="369" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="76" y="369" width="70" height="30"/>
+                                <state key="normal" title="Co-Heads"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-KC-lQA">
-                                <rect key="frame" x="201" y="369" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="201" y="369" width="55" height="30"/>
+                                <state key="normal" title="Contact"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Sk-rcw">
-                                <rect key="frame" x="312" y="369" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="312" y="369" width="30" height="30"/>
+                                <state key="normal" title="FB"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
-                                <rect key="frame" x="417" y="369" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="417" y="369" width="56" height="30"/>
+                                <state key="normal" title="Website"/>
+                                <connections>
+                                    <action selector="visitWebsiteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbp-2v-MAV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,6 +72,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZFL-Bi-irg"/>
+                    <connections>
+                        <outlet property="aboutUsButton" destination="PYa-UF-u2v" id="yjs-bM-vSp"/>
+                        <outlet property="blogButton" destination="Q9X-HB-Iic" id="ffD-AD-MjT"/>
+                        <outlet property="coheadsButton" destination="RSM-2Y-FIb" id="GY8-k0-2Y5"/>
+                        <outlet property="contactUsButton" destination="iuk-KC-lQA" id="ewS-ua-3PU"/>
+                        <outlet property="facebookButton" destination="Dda-Sk-rcw" id="Iyf-9J-kV9"/>
+                        <outlet property="mediaButton" destination="CxF-RE-iSa" id="FS2-dI-VeI"/>
+                        <outlet property="projectsButton" destination="dMa-eR-juB" id="GXA-8K-pkA"/>
+                        <outlet property="websiteButton" destination="chS-Yl-RKR" id="l7x-nX-vpf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
