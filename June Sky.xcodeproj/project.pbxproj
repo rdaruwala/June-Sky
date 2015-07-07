@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C102574C1B4C552600E9F13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C102574B1B4C552600E9F13E /* LaunchScreen.storyboard */; };
+		C12D00041B4C3B5100209735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D00031B4C3B5100209735 /* AppDelegate.swift */; };
+		C12D00061B4C3B5100209735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D00051B4C3B5100209735 /* ViewController.swift */; };
+		C12D00091B4C3B5100209735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C12D00071B4C3B5100209735 /* Main.storyboard */; };
+		C12D000B1B4C3B5100209735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C12D000A1B4C3B5100209735 /* Assets.xcassets */; };
+		C12D00191B4C3B5100209735 /* June_SkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D00181B4C3B5100209735 /* June_SkyTests.swift */; };
+		C12D00241B4C3B5100209735 /* June_SkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12D00231B4C3B5100209735 /* June_SkyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C12D00151B4C3B5100209735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12DFFF81B4C3B5100209735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C12DFFFF1B4C3B5100209735;
+			remoteInfo = "June Sky";
+		};
+		C12D00201B4C3B5100209735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C12DFFF81B4C3B5100209735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C12DFFFF1B4C3B5100209735;
+			remoteInfo = "June Sky";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C102574B1B4C552600E9F13E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C12D00001B4C3B5100209735 /* June Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "June Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12D00031B4C3B5100209735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C12D00051B4C3B5100209735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C12D00081B4C3B5100209735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C12D000A1B4C3B5100209735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C12D000F1B4C3B5100209735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12D00141B4C3B5100209735 /* June SkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "June SkyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12D00181B4C3B5100209735 /* June_SkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = June_SkyTests.swift; sourceTree = "<group>"; };
+		C12D001A1B4C3B5100209735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12D001F1B4C3B5100209735 /* June SkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "June SkyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12D00231B4C3B5100209735 /* June_SkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = June_SkyUITests.swift; sourceTree = "<group>"; };
+		C12D00251B4C3B5100209735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C12D00111B4C3B5100209735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12D001C1B4C3B5100209735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12DFFFD1B4C3B5100209735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C12D00011B4C3B5100209735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12D00001B4C3B5100209735 /* June Sky.app */,
+				C12D00141B4C3B5100209735 /* June SkyTests.xctest */,
+				C12D001F1B4C3B5100209735 /* June SkyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C12D00021B4C3B5100209735 /* June Sky */ = {
+			isa = PBXGroup;
+			children = (
+				C12D00031B4C3B5100209735 /* AppDelegate.swift */,
+				C12D00051B4C3B5100209735 /* ViewController.swift */,
+				C12D00071B4C3B5100209735 /* Main.storyboard */,
+				C12D000A1B4C3B5100209735 /* Assets.xcassets */,
+				C102574B1B4C552600E9F13E /* LaunchScreen.storyboard */,
+				C12D000F1B4C3B5100209735 /* Info.plist */,
+			);
+			path = "June Sky";
+			sourceTree = "<group>";
+		};
+		C12D00171B4C3B5100209735 /* June SkyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C12D00181B4C3B5100209735 /* June_SkyTests.swift */,
+				C12D001A1B4C3B5100209735 /* Info.plist */,
+			);
+			path = "June SkyTests";
+			sourceTree = "<group>";
+		};
+		C12D00221B4C3B5100209735 /* June SkyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C12D00231B4C3B5100209735 /* June_SkyUITests.swift */,
+				C12D00251B4C3B5100209735 /* Info.plist */,
+			);
+			path = "June SkyUITests";
+			sourceTree = "<group>";
+		};
+		C12DFFF71B4C3B5100209735 = {
+			isa = PBXGroup;
+			children = (
+				C12D00021B4C3B5100209735 /* June Sky */,
+				C12D00171B4C3B5100209735 /* June SkyTests */,
+				C12D00221B4C3B5100209735 /* June SkyUITests */,
+				C12D00011B4C3B5100209735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C12D00131B4C3B5100209735 /* June SkyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12D002B1B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June SkyTests" */;
+			buildPhases = (
+				C12D00101B4C3B5100209735 /* Sources */,
+				C12D00111B4C3B5100209735 /* Frameworks */,
+				C12D00121B4C3B5100209735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C12D00161B4C3B5100209735 /* PBXTargetDependency */,
+			);
+			name = "June SkyTests";
+			productName = "June SkyTests";
+			productReference = C12D00141B4C3B5100209735 /* June SkyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C12D001E1B4C3B5100209735 /* June SkyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12D002E1B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June SkyUITests" */;
+			buildPhases = (
+				C12D001B1B4C3B5100209735 /* Sources */,
+				C12D001C1B4C3B5100209735 /* Frameworks */,
+				C12D001D1B4C3B5100209735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C12D00211B4C3B5100209735 /* PBXTargetDependency */,
+			);
+			name = "June SkyUITests";
+			productName = "June SkyUITests";
+			productReference = C12D001F1B4C3B5100209735 /* June SkyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C12DFFFF1B4C3B5100209735 /* June Sky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12D00281B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June Sky" */;
+			buildPhases = (
+				C12DFFFC1B4C3B5100209735 /* Sources */,
+				C12DFFFD1B4C3B5100209735 /* Frameworks */,
+				C12DFFFE1B4C3B5100209735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "June Sky";
+			productName = "June Sky";
+			productReference = C12D00001B4C3B5100209735 /* June Sky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C12DFFF81B4C3B5100209735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rohan Daruwala";
+				TargetAttributes = {
+					C12D00131B4C3B5100209735 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C12DFFFF1B4C3B5100209735;
+					};
+					C12D001E1B4C3B5100209735 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = C12DFFFF1B4C3B5100209735;
+					};
+					C12DFFFF1B4C3B5100209735 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = C12DFFFB1B4C3B5100209735 /* Build configuration list for PBXProject "June Sky" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C12DFFF71B4C3B5100209735;
+			productRefGroup = C12D00011B4C3B5100209735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C12DFFFF1B4C3B5100209735 /* June Sky */,
+				C12D00131B4C3B5100209735 /* June SkyTests */,
+				C12D001E1B4C3B5100209735 /* June SkyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C12D00121B4C3B5100209735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12D001D1B4C3B5100209735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12DFFFE1B4C3B5100209735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C102574C1B4C552600E9F13E /* LaunchScreen.storyboard in Resources */,
+				C12D000B1B4C3B5100209735 /* Assets.xcassets in Resources */,
+				C12D00091B4C3B5100209735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C12D00101B4C3B5100209735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12D00191B4C3B5100209735 /* June_SkyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12D001B1B4C3B5100209735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12D00241B4C3B5100209735 /* June_SkyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12DFFFC1B4C3B5100209735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12D00061B4C3B5100209735 /* ViewController.swift in Sources */,
+				C12D00041B4C3B5100209735 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C12D00161B4C3B5100209735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C12DFFFF1B4C3B5100209735 /* June Sky */;
+			targetProxy = C12D00151B4C3B5100209735 /* PBXContainerItemProxy */;
+		};
+		C12D00211B4C3B5100209735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C12DFFFF1B4C3B5100209735 /* June Sky */;
+			targetProxy = C12D00201B4C3B5100209735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C12D00071B4C3B5100209735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C12D00081B4C3B5100209735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C12D00261B4C3B5100209735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C12D00271B4C3B5100209735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C12D00291B4C3B5100209735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "June Sky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-Sky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C12D002A1B4C3B5100209735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "June Sky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-Sky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C12D002C1B4C3B5100209735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "June SkyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-SkyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/June Sky.app/June Sky";
+			};
+			name = Debug;
+		};
+		C12D002D1B4C3B5100209735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "June SkyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-SkyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/June Sky.app/June Sky";
+			};
+			name = Release;
+		};
+		C12D002F1B4C3B5100209735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "June SkyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-SkyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "June Sky";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C12D00301B4C3B5100209735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "June SkyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohandaruwala.June-SkyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "June Sky";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C12D00281B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12D00291B4C3B5100209735 /* Debug */,
+				C12D002A1B4C3B5100209735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12D002B1B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June SkyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12D002C1B4C3B5100209735 /* Debug */,
+				C12D002D1B4C3B5100209735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12D002E1B4C3B5100209735 /* Build configuration list for PBXNativeTarget "June SkyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12D002F1B4C3B5100209735 /* Debug */,
+				C12D00301B4C3B5100209735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12DFFFB1B4C3B5100209735 /* Build configuration list for PBXProject "June Sky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12D00261B4C3B5100209735 /* Debug */,
+				C12D00271B4C3B5100209735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C12DFFF81B4C3B5100209735 /* Project object */;
+}
