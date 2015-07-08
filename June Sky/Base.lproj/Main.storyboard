@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xqh-e1-c4H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
@@ -18,15 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-eR-juB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-eR-juB">
                                 <rect key="frame" x="76" y="148" width="56" height="30"/>
                                 <state key="normal" title="Projects"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-RE-iSa">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-RE-iSa">
                                 <rect key="frame" x="205" y="148" width="42" height="30"/>
                                 <state key="normal" title="Media"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-UF-u2v">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-UF-u2v">
                                 <rect key="frame" x="417" y="148" width="42" height="30"/>
                                 <state key="normal" title="About"/>
                             </button>
@@ -39,29 +39,29 @@
                                 <color key="textColor" red="0.96855271460000003" green="0.63627076859999998" blue="0.27081206730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9X-HB-Iic">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9X-HB-Iic">
                                 <rect key="frame" x="327" y="148" width="31" height="30"/>
                                 <state key="normal" title="Blog"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
                                 <rect key="frame" x="76" y="369" width="70" height="30"/>
                                 <state key="normal" title="Co-Heads"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-KC-lQA">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-KC-lQA">
                                 <rect key="frame" x="201" y="369" width="55" height="30"/>
                                 <state key="normal" title="Contact"/>
                                 <connections>
                                     <action selector="onContactButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqY-EV-bo6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Sk-rcw">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Sk-rcw">
                                 <rect key="frame" x="312" y="369" width="30" height="30"/>
                                 <state key="normal" title="FB"/>
                                 <connections>
                                     <action selector="visitFacebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tY-Zo-8bE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
                                 <rect key="frame" x="417" y="369" width="56" height="30"/>
                                 <state key="normal" title="Website"/>
                                 <connections>
@@ -73,10 +73,16 @@
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="4HU-WV-XQh" secondAttribute="leading" id="92c-kA-NI1"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="leading" id="CQN-C4-y5r"/>
+                            <constraint firstItem="dMa-eR-juB" firstAttribute="centerY" secondItem="CxF-RE-iSa" secondAttribute="centerY" id="FCs-tE-ceM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4HU-WV-XQh" secondAttribute="trailing" id="Jik-Ha-dje"/>
+                            <constraint firstItem="iuk-KC-lQA" firstAttribute="centerY" secondItem="Dda-Sk-rcw" secondAttribute="centerY" id="OBe-wj-dwv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4HU-WV-XQh" secondAttribute="bottom" constant="8" id="TLg-MP-Srx"/>
+                            <constraint firstItem="Dda-Sk-rcw" firstAttribute="centerY" secondItem="chS-Yl-RKR" secondAttribute="centerY" id="Vtj-DS-Ncj"/>
+                            <constraint firstItem="Q9X-HB-Iic" firstAttribute="centerY" secondItem="PYa-UF-u2v" secondAttribute="centerY" id="d0u-9E-hpp"/>
+                            <constraint firstItem="RSM-2Y-FIb" firstAttribute="centerY" secondItem="iuk-KC-lQA" secondAttribute="centerY" id="hpj-Nf-k3G"/>
                             <constraint firstItem="ONP-Ao-Cf2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="l3p-lg-8dd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="trailing" id="ssz-DG-r5h"/>
+                            <constraint firstItem="CxF-RE-iSa" firstAttribute="centerY" secondItem="Q9X-HB-Iic" secondAttribute="centerY" id="zO9-rm-S8R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZFL-Bi-irg"/>
@@ -89,11 +95,12 @@
                         <outlet property="mediaButton" destination="CxF-RE-iSa" id="FS2-dI-VeI"/>
                         <outlet property="projectsButton" destination="dMa-eR-juB" id="GXA-8K-pkA"/>
                         <outlet property="websiteButton" destination="chS-Yl-RKR" id="l7x-nX-vpf"/>
+                        <segue destination="xqh-e1-c4H" kind="show" identifier="contactUsSegue" id="qZI-nX-IiW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1929" y="364"/>
+            <point key="canvasLocation" x="2741" y="364"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="2Z1-2I-wYI">
@@ -122,7 +129,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FSk-vg-gON">
                                 <rect key="frame" x="20" y="153" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-MI-awh">
                                 <rect key="frame" x="20" y="251" width="560" height="269"/>
@@ -142,10 +149,11 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="not-kR-DF6">
                                 <rect key="frame" x="20" y="203" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fk1-0L-KNj" firstAttribute="top" secondItem="RIh-lF-H5c" secondAttribute="bottom" constant="-3" id="4zw-xJ-H3T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HvL-mB-vje" secondAttribute="trailing" id="5Gz-4q-cPj"/>
@@ -162,17 +170,27 @@
                             <constraint firstAttribute="trailingMargin" secondItem="FSk-vg-gON" secondAttribute="trailing" id="fdz-JV-CU7"/>
                             <constraint firstAttribute="leadingMargin" secondItem="RIh-lF-H5c" secondAttribute="leading" id="p0g-H1-77g"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ohm-Em-nrG" appends="YES" id="WOn-P9-ouf"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="messageTextField" destination="sXe-MI-awh" id="Dqu-8E-vf7"/>
                         <outlet property="nameTextField" destination="FSk-vg-gON" id="coG-7q-Adf"/>
                         <outlet property="subjectTextField" destination="not-kR-DF6" id="aIN-xf-s0f"/>
                         <outlet property="submitButton" destination="HvL-mB-vje" id="kgM-jg-3PO"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeFromContactSegue" id="EQa-Zh-Cfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSP-QO-zCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ohm-Em-nrG">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="onAreaTap:" destination="xqh-e1-c4H" id="K4p-9x-h3D"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2651" y="413"/>
+            <point key="canvasLocation" x="3454" y="364"/>
         </scene>
     </scenes>
     <resources>

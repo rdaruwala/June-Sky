@@ -18,6 +18,8 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
     
     var mc: MFMailComposeViewController!
     
+    var stuffArray:[AnyObject]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         submitButton.backgroundColor = UIColor.clearColor()
@@ -29,6 +31,8 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
         messageTextField.layer.cornerRadius = 10.0
         
         mc = MFMailComposeViewController()
+        
+        stuffArray = [nameTextField, subjectTextField, messageTextField]
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
@@ -58,7 +62,9 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
             mc.setMessageBody(messageBody, isHTML: false)
             mc.setToRecipients(toRecipents)
             
-            self.presentViewController(mc, animated: true, completion: nil)
+            self.presentViewController(mc, animated: true, completion: { () -> Void in
+                self.performSegueWithIdentifier("toHomeFromContactSegue", sender: self)
+            })
         }
     }
     
@@ -76,6 +82,19 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
             break
         }
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func onAreaTap(sender: UITapGestureRecognizer) {
+        
+        for object in stuffArray{
+            if (object.frame.contains(sender.locationInView(self.view))) == false{
+                messageTextField.resignFirstResponder()
+                nameTextField.resignFirstResponder()
+                subjectTextField.resignFirstResponder()
+            }
+            
+        }
+        
     }
     
     
