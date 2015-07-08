@@ -17,10 +17,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var contactUsButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var websiteButton: UIButton!
-
+    
+    
+    @IBOutlet weak var about2WallConstraint: NSLayoutConstraint!
+    @IBOutlet weak var about2BlogConstraint: NSLayoutConstraint!
+    @IBOutlet weak var blog2MediaConstraint: NSLayoutConstraint!
+    @IBOutlet weak var media2ProjectsConstraint: NSLayoutConstraint!
+    @IBOutlet weak var projects2WallConstraint: NSLayoutConstraint!
+    @IBOutlet weak var website2WallConstraint: NSLayoutConstraint!
+    @IBOutlet weak var website2FBConstraint: NSLayoutConstraint!
+    @IBOutlet weak var FB2ContactConstraint: NSLayoutConstraint!
+    @IBOutlet weak var contact2CoheadsConstraint: NSLayoutConstraint!
+    @IBOutlet weak var projects2CoheadsConstraint: NSLayoutConstraint!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.clearColor()
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
     override func didReceiveMemoryWarning() {
