@@ -185,7 +185,6 @@
                         <outlet property="nameTextField" destination="FSk-vg-gON" id="coG-7q-Adf"/>
                         <outlet property="subjectTextField" destination="not-kR-DF6" id="aIN-xf-s0f"/>
                         <outlet property="submitButton" destination="HvL-mB-vje" id="kgM-jg-3PO"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="toHomeFromContactSegue" id="EQa-Zh-Cfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSP-QO-zCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

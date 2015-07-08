@@ -39,13 +39,6 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
     }
     
-    /* func keyboardWillShow(sender: NSNotification) {
-    self.view.frame.origin.y -= 125
-    }
-    func keyboardWillHide(sender: NSNotification) {
-    self.view.frame.origin.y += 125
-    }*/
-    
     func keyboardWillShow(sender: NSNotification) {
         if let userInfo = sender.userInfo {
             if let keyboardHeight = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue.size.height {
@@ -82,9 +75,7 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
             mc.setMessageBody(messageBody, isHTML: false)
             mc.setToRecipients(toRecipents)
             
-            self.presentViewController(mc, animated: true, completion: { () -> Void in
-                self.performSegueWithIdentifier("toHomeFromContactSegue", sender: self)
-            })
+            self.presentViewController(mc, animated: true, completion: nil)
         }
     }
     
@@ -92,10 +83,13 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
         switch result.rawValue {
         case MFMailComposeResultCancelled.rawValue:
             print("Mail cancelled")
+            self.dismissViewControllerAnimated(true, completion: nil)
         case MFMailComposeResultSaved.rawValue:
             print("Mail saved")
+            self.performSegueWithIdentifier("toHomeFromContactSegue", sender: self)
         case MFMailComposeResultSent.rawValue:
             print("Mail sent")
+            self.performSegueWithIdentifier("toHomeFromContactSegue", sender: self)
         case MFMailComposeResultFailed.rawValue:
             print("Mail sent failure: %@", [error!.localizedDescription])
         default:
