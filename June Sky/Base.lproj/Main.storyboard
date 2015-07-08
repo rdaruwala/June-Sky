@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xqh-e1-c4H">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-eR-juB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-eR-juB">
                                 <rect key="frame" x="76" y="148" width="56" height="30"/>
                                 <state key="normal" title="Projects"/>
                             </button>
@@ -25,7 +26,7 @@
                                 <rect key="frame" x="205" y="148" width="42" height="30"/>
                                 <state key="normal" title="Media"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-UF-u2v">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-UF-u2v">
                                 <rect key="frame" x="417" y="148" width="42" height="30"/>
                                 <state key="normal" title="About"/>
                             </button>
@@ -42,7 +43,7 @@
                                 <rect key="frame" x="327" y="148" width="31" height="30"/>
                                 <state key="normal" title="Blog"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
                                 <rect key="frame" x="76" y="369" width="70" height="30"/>
                                 <state key="normal" title="Co-Heads"/>
                             </button>
@@ -60,7 +61,7 @@
                                     <action selector="visitFacebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tY-Zo-8bE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
                                 <rect key="frame" x="417" y="369" width="56" height="30"/>
                                 <state key="normal" title="Website"/>
                                 <connections>
@@ -74,10 +75,6 @@
                             <constraint firstAttribute="leadingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="leading" id="CQN-C4-y5r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4HU-WV-XQh" secondAttribute="trailing" id="Jik-Ha-dje"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4HU-WV-XQh" secondAttribute="bottom" constant="8" id="TLg-MP-Srx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PYa-UF-u2v" secondAttribute="trailing" constant="8" id="YD0-Mr-6Wj"/>
-                            <constraint firstItem="RSM-2Y-FIb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="d49-H3-zpt"/>
-                            <constraint firstItem="dMa-eR-juB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="dA3-4F-SIG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="chS-Yl-RKR" secondAttribute="trailing" constant="8" id="gBk-Jd-FiT"/>
                             <constraint firstItem="ONP-Ao-Cf2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="l3p-lg-8dd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="trailing" id="ssz-DG-r5h"/>
                         </constraints>
@@ -116,7 +113,7 @@
                                 <color key="textColor" red="0.96855271460000003" green="0.63627076859999998" blue="0.27081206730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk1-0L-KNj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Contact Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk1-0L-KNj">
                                 <rect key="frame" x="20" y="92" width="560" height="53"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" red="0.96855271460000003" green="0.63627076859999998" blue="0.27081206730000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -127,26 +124,51 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="not-kR-DF6">
-                                <rect key="frame" x="20" y="203" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-MI-awh">
                                 <rect key="frame" x="20" y="251" width="560" height="269"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HvL-mB-vje">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.96855271460000003" green="0.63627076859999998" blue="0.27081206730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmitButtonTap:" destination="xqh-e1-c4H" eventType="touchUpInside" id="a2t-8I-7fZ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="not-kR-DF6">
+                                <rect key="frame" x="20" y="203" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RIh-lF-H5c" firstAttribute="top" secondItem="Y5A-HE-KlU" secondAttribute="bottom" constant="22" id="35g-NS-1bk"/>
-                            <constraint firstItem="not-kR-DF6" firstAttribute="top" secondItem="FSk-vg-gON" secondAttribute="bottom" constant="8" id="Fhf-2Y-FUK"/>
-                            <constraint firstItem="sXe-MI-awh" firstAttribute="top" secondItem="not-kR-DF6" secondAttribute="bottom" constant="8" id="OTb-5s-hoc"/>
-                            <constraint firstItem="n2X-Mz-3aY" firstAttribute="top" secondItem="sXe-MI-awh" secondAttribute="bottom" constant="80" id="dQ7-wy-M3S"/>
+                            <constraint firstItem="fk1-0L-KNj" firstAttribute="top" secondItem="RIh-lF-H5c" secondAttribute="bottom" constant="-3" id="4zw-xJ-H3T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HvL-mB-vje" secondAttribute="trailing" id="5Gz-4q-cPj"/>
+                            <constraint firstItem="sXe-MI-awh" firstAttribute="top" secondItem="not-kR-DF6" secondAttribute="bottom" constant="20" id="65d-RZ-tlN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fk1-0L-KNj" secondAttribute="trailing" id="BhY-iT-WNv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="not-kR-DF6" secondAttribute="trailing" id="HRM-IT-fnX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sXe-MI-awh" secondAttribute="leading" id="HbL-5C-8tq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fk1-0L-KNj" secondAttribute="leading" id="ID0-3N-42s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sXe-MI-awh" secondAttribute="trailing" id="Mfm-GZ-sT7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HvL-mB-vje" secondAttribute="leading" id="VVf-HB-LWD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RIh-lF-H5c" secondAttribute="trailing" id="Vad-qw-5Bb"/>
+                            <constraint firstItem="FSk-vg-gON" firstAttribute="top" secondItem="fk1-0L-KNj" secondAttribute="bottom" constant="8" id="ZSv-Ny-KkJ"/>
+                            <constraint firstItem="not-kR-DF6" firstAttribute="top" secondItem="FSk-vg-gON" secondAttribute="bottom" constant="8" id="cdL-Pm-qsw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FSk-vg-gON" secondAttribute="trailing" id="fdz-JV-CU7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="RIh-lF-H5c" secondAttribute="leading" id="p0g-H1-77g"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="sXe-MI-awh" id="Dqu-8E-vf7"/>
+                        <outlet property="nameTextField" destination="FSk-vg-gON" id="coG-7q-Adf"/>
+                        <outlet property="subjectTextField" destination="not-kR-DF6" id="aIN-xf-s0f"/>
+                        <outlet property="submitButton" destination="HvL-mB-vje" id="kgM-jg-3PO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSP-QO-zCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
