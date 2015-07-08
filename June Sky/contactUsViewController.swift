@@ -15,6 +15,7 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var subjectTextField: UITextField!
     @IBOutlet weak var messageTextField: UITextView!
+    @IBOutlet weak var inputViewButtonConstraint: NSLayoutConstraint!
     
     var mc: MFMailComposeViewController!
     
@@ -38,12 +39,31 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
     }
     
-    func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y -= 125
+    /* func keyboardWillShow(sender: NSNotification) {
+    self.view.frame.origin.y -= 125
     }
     func keyboardWillHide(sender: NSNotification) {
-        self.view.frame.origin.y += 125
+    self.view.frame.origin.y += 125
+    }*/
+    
+    func keyboardWillShow(sender: NSNotification) {
+        if let userInfo = sender.userInfo {
+            if let keyboardHeight = userInfo[UIKeyboardFrameEndUserInfoKey]?.CGRectValue.size.height {
+                inputViewButtonConstraint.constant = keyboardHeight + 8
+                UIView.animateWithDuration(0.15, animations: { () -> Void in
+                    self.view.layoutIfNeeded()
+                })
+            }
+        }
     }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        inputViewButtonConstraint.constant = 0
+        UIView.animateWithDuration(0.15, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+        })
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
