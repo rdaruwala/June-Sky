@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var toTransmitURL = ""
+    
     @IBOutlet weak var ourWorkButton: UIButton!
     @IBOutlet weak var mediaButton: UIButton!
     @IBOutlet weak var aboutUsButton: UIButton!
@@ -33,12 +35,13 @@ class ViewController: UIViewController {
     @IBAction func onWorkButtonTap(sender: AnyObject) {
         let actionSheet = UIAlertController(title: "Select Tab", message: "Please select which section you would like to view.", preferredStyle: .ActionSheet)
         let blogAction = UIAlertAction(title: "Blog" , style: .Default){ (action) -> Void in
-            //todo segue to blog page
+            self.toTransmitURL = "http://junesky.org/blog/"
+            self.performSegueWithIdentifier("toWebView", sender: self)
         }
         let projectAction = UIAlertAction(title: "Projects", style: .Default, handler: { (action) -> Void in
-            //todo segue to projects page
+            self.toTransmitURL = "http://junesky.org/projects/"
+            self.performSegueWithIdentifier("toWebView", sender: self)
         })
-        actionSheet.addAction(blogAction)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
         }
@@ -58,7 +61,7 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url!)
         })
         let YTAction = UIAlertAction(title: "Our Youtube Channel", style: .Default, handler: { (action) -> Void in
-            //TODO segue to YT channel
+            UIApplication.tryURL(["youtube://channel/UCm2B71fET1IXzHd-kROb_nw", "https://www.youtube.com/channel/UCm2B71fET1IXzHd-kROb_nw"])
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
@@ -74,10 +77,12 @@ class ViewController: UIViewController {
     @IBAction func onAboutTap(sender: AnyObject) {
         let actionSheet = UIAlertController(title: "Select Tab", message: "Please select which section you would like to view.", preferredStyle: .ActionSheet)
         let OrgAction = UIAlertAction(title: "About the Organization" , style: .Default){ (action) -> Void in
-            //TODO about page
+            self.toTransmitURL = "http://junesky.org/about-the-organization/"
+            self.performSegueWithIdentifier("toWebView", sender: self)
         }
         let WebsiteAction = UIAlertAction(title: "Co-Heads", style: .Default, handler: { (action) -> Void in
-            //TODO leaders page
+            self.toTransmitURL = "http://junesky.org/co-heads-of-the-group/"
+            self.performSegueWithIdentifier("toWebView", sender: self)
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
@@ -87,6 +92,14 @@ class ViewController: UIViewController {
         actionSheet.addAction(cancelAction)
         self.presentViewController(actionSheet, animated: true, completion: nil)
         
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toWebView"){
+            let next = segue.destinationViewController as? UINavigationController
+            let vc = next?.topViewController as? webViewController
+            vc!.URLRecieved = toTransmitURL
+        }
     }
     
     
