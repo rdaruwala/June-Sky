@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var toTransmitURL = ""
+    var stuffArray:[UIButton]!
     
     @IBOutlet weak var ourWorkButton: UIButton!
     @IBOutlet weak var mediaButton: UIButton!
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        
+        stuffArray = [ourWorkButton, mediaButton, aboutUsButton, contactUsButton]
         
     }
     
@@ -103,5 +106,21 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func onTapAction(sender: AnyObject) {
+        var toDo = true
+        for view in stuffArray{
+            if (view.frame.contains(sender.locationInView(self.view))){
+                toDo = false
+                break
+            }
+        }
+        
+        if(toDo){
+            
+        }
+        
+        
+        
+    }
+    
 }
-

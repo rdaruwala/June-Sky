@@ -88,6 +88,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="PTV-J6-76v" secondAttribute="trailing" constant="8" id="8Bs-cc-nIb"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4HU-WV-XQh" secondAttribute="leading" id="92c-kA-NI1"/>
@@ -104,6 +105,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="trailing" id="ssz-DG-r5h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4HU-WV-XQh" secondAttribute="bottom" constant="8" id="uwP-Ey-OTq"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="RKW-jc-acV" appends="YES" id="Us7-We-PyA"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="ZFL-Bi-irg"/>
                     <connections>
@@ -116,6 +120,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RKW-jc-acV">
+                    <pressTypeMask key="allowedPressTypes"/>
+                    <connections>
+                        <action selector="onTapAction:" destination="BYZ-38-t0r" id="UUc-tW-zXo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3553" y="364"/>
         </scene>
