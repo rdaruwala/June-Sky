@@ -9,51 +9,86 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var projectsButton: UIButton!
+    
+    @IBOutlet weak var ourWorkButton: UIButton!
     @IBOutlet weak var mediaButton: UIButton!
-    @IBOutlet weak var blogButton: UIButton!
     @IBOutlet weak var aboutUsButton: UIButton!
-    @IBOutlet weak var coheadsButton: UIButton!
     @IBOutlet weak var contactUsButton: UIButton!
-    @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var websiteButton: UIButton!
-    
-    
-    @IBOutlet weak var about2WallConstraint: NSLayoutConstraint!
-    @IBOutlet weak var about2BlogConstraint: NSLayoutConstraint!
-    @IBOutlet weak var blog2MediaConstraint: NSLayoutConstraint!
-    @IBOutlet weak var media2ProjectsConstraint: NSLayoutConstraint!
-    @IBOutlet weak var projects2WallConstraint: NSLayoutConstraint!
-    @IBOutlet weak var website2WallConstraint: NSLayoutConstraint!
-    @IBOutlet weak var website2FBConstraint: NSLayoutConstraint!
-    @IBOutlet weak var FB2ContactConstraint: NSLayoutConstraint!
-    @IBOutlet weak var contact2CoheadsConstraint: NSLayoutConstraint!
-    @IBOutlet weak var projects2CoheadsConstraint: NSLayoutConstraint!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.clearColor()
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func visitWebsiteButton(sender: AnyObject) {
-        let url = NSURL(string: "http://www.junesky.org")
-        UIApplication.sharedApplication().openURL(url!)
-    }
-    
-    @IBAction func visitFacebookButton(sender: AnyObject) {
-        UIApplication.tryURL(["fb://profile/376950672362257", "https://www.facebook.com/juneskyofficial"])
     }
     
     @IBAction func onContactButtonTap(sender: AnyObject) {
         self.performSegueWithIdentifier("contactUsSegue", sender: self)
     }
+    
+    
+    @IBAction func onWorkButtonTap(sender: AnyObject) {
+        let actionSheet = UIAlertController(title: "Select Tab", message: "Please select which section you would like to view.", preferredStyle: .ActionSheet)
+        let blogAction = UIAlertAction(title: "Blog" , style: .Default){ (action) -> Void in
+            //todo segue to blog page
+        }
+        let projectAction = UIAlertAction(title: "Projects", style: .Default, handler: { (action) -> Void in
+            //todo segue to projects page
+        })
+        actionSheet.addAction(blogAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        actionSheet.addAction(blogAction)
+        actionSheet.addAction(cancelAction)
+        actionSheet.addAction(projectAction)
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+    }
+    
+    @IBAction func onMediaButtonTap(sender: AnyObject) {
+        let actionSheet = UIAlertController(title: "Select Tab", message: "Please select which section you would like to view.", preferredStyle: .ActionSheet)
+        let FBAction = UIAlertAction(title: "Facebook Page" , style: .Default){ (action) -> Void in
+            UIApplication.tryURL(["fb://profile/376950672362257", "https://www.facebook.com/juneskyofficial"])
+        }
+        let WebsiteAction = UIAlertAction(title: "Our Website", style: .Default, handler: { (action) -> Void in
+            let url = NSURL(string: "http://www.junesky.org")
+            UIApplication.sharedApplication().openURL(url!)
+        })
+        let YTAction = UIAlertAction(title: "Our Youtube Channel", style: .Default, handler: { (action) -> Void in
+            //TODO segue to YT channel
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        actionSheet.addAction(FBAction)
+        actionSheet.addAction(WebsiteAction)
+        actionSheet.addAction(YTAction)
+        actionSheet.addAction(cancelAction)
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func onAboutTap(sender: AnyObject) {
+        let actionSheet = UIAlertController(title: "Select Tab", message: "Please select which section you would like to view.", preferredStyle: .ActionSheet)
+        let OrgAction = UIAlertAction(title: "About the Organization" , style: .Default){ (action) -> Void in
+            //TODO about page
+        }
+        let WebsiteAction = UIAlertAction(title: "Co-Heads", style: .Default, handler: { (action) -> Void in
+            //TODO leaders page
+        })
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        actionSheet.addAction(OrgAction)
+        actionSheet.addAction(WebsiteAction)
+        actionSheet.addAction(cancelAction)
+        self.presentViewController(actionSheet, animated: true, completion: nil)
+        
+    }
+    
     
 }
 

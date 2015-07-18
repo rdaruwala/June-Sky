@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cit-xX-c3t" id="pS9-1E-0Ub">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -46,18 +46,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMa-eR-juB">
-                                <rect key="frame" x="76" y="148" width="56" height="30"/>
-                                <state key="normal" title="Projects"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxF-RE-iSa">
-                                <rect key="frame" x="205" y="148" width="42" height="30"/>
-                                <state key="normal" title="Media"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYa-UF-u2v">
-                                <rect key="frame" x="417" y="148" width="42" height="30"/>
-                                <state key="normal" title="About"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="4HU-WV-XQh">
                                 <rect key="frame" x="20" y="492" width="560" height="100"/>
                                 <constraints>
@@ -70,83 +58,59 @@
                                 <color key="textColor" red="0.96855271460000003" green="0.63627076859999998" blue="0.27081206730000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9X-HB-Iic">
-                                <rect key="frame" x="327" y="148" width="31" height="30"/>
-                                <state key="normal" title="Blog"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-2Y-FIb">
-                                <rect key="frame" x="76" y="369" width="70" height="30"/>
-                                <state key="normal" title="Co-Heads"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuk-KC-lQA">
-                                <rect key="frame" x="201" y="369" width="55" height="30"/>
-                                <state key="normal" title="Contact"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e1-I0-OgS">
+                                <rect key="frame" x="20" y="160" width="65" height="30"/>
+                                <state key="normal" title="Our Work"/>
                                 <connections>
-                                    <action selector="onContactButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yqY-EV-bo6"/>
+                                    <action selector="onWorkButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mnP-ty-K1P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-Sk-rcw">
-                                <rect key="frame" x="312" y="369" width="30" height="30"/>
-                                <state key="normal" title="FB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIt-oU-0gb">
+                                <rect key="frame" x="20" y="424" width="64" height="30"/>
+                                <state key="normal" title="About Us"/>
                                 <connections>
-                                    <action selector="visitFacebookButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tY-Zo-8bE"/>
+                                    <action selector="onAboutTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meJ-cH-sTY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-Yl-RKR">
-                                <rect key="frame" x="417" y="369" width="56" height="30"/>
-                                <state key="normal" title="Website"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTV-J6-76v">
+                                <rect key="frame" x="503" y="424" width="78" height="30"/>
+                                <state key="normal" title="Contact Us"/>
                                 <connections>
-                                    <action selector="visitWebsiteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbp-2v-MAV"/>
+                                    <action selector="onContactButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zks-DQ-15e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-tP-4RN">
+                                <rect key="frame" x="503" y="160" width="42" height="30"/>
+                                <state key="normal" title="Media"/>
+                                <connections>
+                                    <action selector="onMediaButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b77-He-qN0"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iuk-KC-lQA" firstAttribute="leading" secondItem="RSM-2Y-FIb" secondAttribute="trailing" constant="55" id="0R0-RY-fh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PTV-J6-76v" secondAttribute="trailing" constant="8" id="8Bs-cc-nIb"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4HU-WV-XQh" secondAttribute="leading" id="92c-kA-NI1"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="leading" id="CQN-C4-y5r"/>
-                            <constraint firstItem="PYa-UF-u2v" firstAttribute="leading" secondItem="Q9X-HB-Iic" secondAttribute="trailing" constant="59" id="D39-4D-OWQ"/>
-                            <constraint firstItem="dMa-eR-juB" firstAttribute="centerY" secondItem="CxF-RE-iSa" secondAttribute="centerY" id="FCs-tE-ceM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="chS-Yl-RKR" secondAttribute="trailing" constant="107" id="Fio-qx-dsZ"/>
+                            <constraint firstItem="DIt-oU-0gb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="DQ0-QT-lxQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4HU-WV-XQh" secondAttribute="trailing" id="Jik-Ha-dje"/>
-                            <constraint firstItem="RSM-2Y-FIb" firstAttribute="top" secondItem="dMa-eR-juB" secondAttribute="bottom" constant="191" id="KMt-5B-B59"/>
-                            <constraint firstItem="iuk-KC-lQA" firstAttribute="centerY" secondItem="Dda-Sk-rcw" secondAttribute="centerY" id="OBe-wj-dwv"/>
-                            <constraint firstItem="Dda-Sk-rcw" firstAttribute="leading" secondItem="iuk-KC-lQA" secondAttribute="trailing" constant="56" id="Q77-on-kpG"/>
-                            <constraint firstItem="Dda-Sk-rcw" firstAttribute="centerY" secondItem="chS-Yl-RKR" secondAttribute="centerY" id="Vtj-DS-Ncj"/>
-                            <constraint firstItem="Q9X-HB-Iic" firstAttribute="leading" secondItem="CxF-RE-iSa" secondAttribute="trailing" constant="80" id="XDB-XX-vXf"/>
-                            <constraint firstItem="Q9X-HB-Iic" firstAttribute="centerY" secondItem="PYa-UF-u2v" secondAttribute="centerY" id="d0u-9E-hpp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PYa-UF-u2v" secondAttribute="trailing" constant="121" id="hP7-Dh-SC4"/>
-                            <constraint firstItem="RSM-2Y-FIb" firstAttribute="centerY" secondItem="iuk-KC-lQA" secondAttribute="centerY" id="hpj-Nf-k3G"/>
+                            <constraint firstItem="DIt-oU-0gb" firstAttribute="centerY" secondItem="PTV-J6-76v" secondAttribute="centerY" id="KU1-At-mmb"/>
+                            <constraint firstItem="0e1-I0-OgS" firstAttribute="top" secondItem="ONP-Ao-Cf2" secondAttribute="bottom" constant="60" id="Oip-Oa-AQJ"/>
+                            <constraint firstItem="0e1-I0-OgS" firstAttribute="centerY" secondItem="6aB-tP-4RN" secondAttribute="centerY" id="V7x-gh-ZcX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6aB-tP-4RN" secondAttribute="trailing" constant="8" id="Zsg-oK-din"/>
+                            <constraint firstItem="4HU-WV-XQh" firstAttribute="top" secondItem="DIt-oU-0gb" secondAttribute="bottom" constant="60" id="kPm-vx-HML"/>
                             <constraint firstItem="ONP-Ao-Cf2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="l3p-lg-8dd"/>
-                            <constraint firstItem="CxF-RE-iSa" firstAttribute="leading" secondItem="dMa-eR-juB" secondAttribute="trailing" constant="73" id="mpU-uh-wgB"/>
-                            <constraint firstItem="RSM-2Y-FIb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="pAK-7i-Ge7"/>
-                            <constraint firstItem="dMa-eR-juB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="rVk-6B-cDo"/>
-                            <constraint firstItem="chS-Yl-RKR" firstAttribute="leading" secondItem="Dda-Sk-rcw" secondAttribute="trailing" constant="75" id="smT-9f-8yQ"/>
+                            <constraint firstItem="0e1-I0-OgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="qfV-uI-ZKX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ONP-Ao-Cf2" secondAttribute="trailing" id="ssz-DG-r5h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4HU-WV-XQh" secondAttribute="bottom" constant="8" id="uwP-Ey-OTq"/>
-                            <constraint firstItem="CxF-RE-iSa" firstAttribute="centerY" secondItem="Q9X-HB-Iic" secondAttribute="centerY" id="zO9-rm-S8R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZFL-Bi-irg"/>
                     <connections>
-                        <outlet property="FB2ContactConstraint" destination="Q77-on-kpG" id="yaP-0w-zTt"/>
-                        <outlet property="about2BlogConstraint" destination="D39-4D-OWQ" id="nLH-c8-tOj"/>
-                        <outlet property="about2WallConstraint" destination="hP7-Dh-SC4" id="zdQ-Zt-O8d"/>
-                        <outlet property="aboutUsButton" destination="PYa-UF-u2v" id="yjs-bM-vSp"/>
-                        <outlet property="blog2MediaConstraint" destination="XDB-XX-vXf" id="4UJ-do-dmw"/>
-                        <outlet property="blogButton" destination="Q9X-HB-Iic" id="ffD-AD-MjT"/>
-                        <outlet property="coheadsButton" destination="RSM-2Y-FIb" id="GY8-k0-2Y5"/>
-                        <outlet property="contact2CoheadsConstraint" destination="0R0-RY-fh5" id="lKb-42-yMH"/>
-                        <outlet property="contactUsButton" destination="iuk-KC-lQA" id="ewS-ua-3PU"/>
-                        <outlet property="facebookButton" destination="Dda-Sk-rcw" id="Iyf-9J-kV9"/>
-                        <outlet property="media2ProjectsConstraint" destination="mpU-uh-wgB" id="3kz-9d-6Ze"/>
-                        <outlet property="mediaButton" destination="CxF-RE-iSa" id="FS2-dI-VeI"/>
-                        <outlet property="projects2CoheadsConstraint" destination="KMt-5B-B59" id="NNV-eO-A9p"/>
-                        <outlet property="projects2WallConstraint" destination="rVk-6B-cDo" id="NY5-0s-eT6"/>
-                        <outlet property="projectsButton" destination="dMa-eR-juB" id="GXA-8K-pkA"/>
-                        <outlet property="website2FBConstraint" destination="smT-9f-8yQ" id="W41-qb-N6C"/>
-                        <outlet property="website2WallConstraint" destination="Fio-qx-dsZ" id="LMJ-nF-dIT"/>
-                        <outlet property="websiteButton" destination="chS-Yl-RKR" id="l7x-nX-vpf"/>
+                        <outlet property="aboutUsButton" destination="DIt-oU-0gb" id="lQd-vf-WtE"/>
+                        <outlet property="contactUsButton" destination="PTV-J6-76v" id="iZx-Rz-ayR"/>
+                        <outlet property="mediaButton" destination="6aB-tP-4RN" id="M8q-IA-Ohd"/>
+                        <outlet property="ourWorkButton" destination="0e1-I0-OgS" id="430-Ag-0We"/>
                         <segue destination="xqh-e1-c4H" kind="show" identifier="contactUsSegue" id="qZI-nX-IiW"/>
                     </connections>
                 </viewController>
