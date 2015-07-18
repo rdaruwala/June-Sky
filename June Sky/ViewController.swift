@@ -21,8 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = UIColor.blackColor()
-        
-        stuffArray = [ourWorkButton, mediaButton, aboutUsButton, contactUsButton]
+        /*ourWorkButton.setImage(UIImage(named: "OurWork.png"), forState: UIControlState.Normal)
+        mediaButton.setImage(UIImage(named: "Media.png"), forState: UIControlState.Normal)
+        aboutUsButton.setImage(UIImage(named: "AboutUs.png"), forState: UIControlState.Normal)
+        contactUsButton.setImage(UIImage(named: "contactus.png"), forState: UIControlState.Normal)*/
         
     }
     
@@ -64,7 +66,7 @@ class ViewController: UIViewController {
             UIApplication.sharedApplication().openURL(url!)
         })
         let YTAction = UIAlertAction(title: "Our Youtube Channel", style: .Default, handler: { (action) -> Void in
-            UIApplication.tryURL(["youtube://channel/UCm2B71fET1IXzHd-kROb_nw", "https://www.youtube.com/channel/UCm2B71fET1IXzHd-kROb_nw"])
+            UIApplication.tryURL(["https://www.youtube.com/channel/UCm2B71fET1IXzHd-kROb_nw"])
         })
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
@@ -103,24 +105,6 @@ class ViewController: UIViewController {
             let vc = next?.topViewController as? webViewController
             vc!.URLRecieved = toTransmitURL
         }
-    }
-    
-    
-    @IBAction func onTapAction(sender: AnyObject) {
-        var toDo = true
-        for view in stuffArray{
-            if (view.frame.contains(sender.locationInView(self.view))){
-                toDo = false
-                break
-            }
-        }
-        
-        if(toDo){
-            
-        }
-        
-        
-        
     }
     
 }

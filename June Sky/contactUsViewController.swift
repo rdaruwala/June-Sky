@@ -83,7 +83,6 @@ class contactUsViewController: UIViewController, MFMailComposeViewControllerDele
         switch result.rawValue {
         case MFMailComposeResultCancelled.rawValue:
             print("Mail cancelled")
-            self.dismissViewControllerAnimated(true, completion: nil)
         case MFMailComposeResultSaved.rawValue:
             print("Mail saved")
             self.performSegueWithIdentifier("toHomeFromContactSegue", sender: self)
